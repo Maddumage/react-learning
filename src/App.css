@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.product-item {
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  .title {
+    font-size: calc(14px + 2vmin);
+    font-weight: bold;
+  }
+  .subtitle {
+    font-size: calc(10px + 1vmin);
+    font-weight: normal;
+  }
+  .desc {
+    font-size: calc(6px + 1vmin);
+    font-weight: lighter;
+  }
+}
