@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 import "./ProductItem.css";
-import { Product } from "../../types";
+import { Product } from "../../../../types";
+import { AmountLabel } from "../../../../components";
+import { Currency } from "../../../../constants";
 
 type ProductItemProps = {
   product: Product;
@@ -21,7 +23,7 @@ const ProductItem: FC<ProductItemProps> = ({ product, onClick }) => {
       </div>
       <div className="price-stock-container">
         <div className="price">
-          <span>${product.price}</span>
+          <AmountLabel amount={product.price} currency={Currency.USD} />
         </div>
         <div className="stock">
           <span>{product.stock}</span>
