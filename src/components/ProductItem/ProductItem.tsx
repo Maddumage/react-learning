@@ -19,6 +19,14 @@ const ProductItem: FC<ProductItemProps> = ({ product, onClick }) => {
       <div className="desc">
         <span>{product.description}</span>
       </div>
+      <div className="price-stock-container">
+        <div className="price">
+          <span>${product.price}</span>
+        </div>
+        <div className="stock">
+          <span>{product.stock}</span>
+        </div>
+      </div>
     </div>
   );
 };
